@@ -1,8 +1,8 @@
 
 #!/bin/bash
 
-Person1=Ramesh v
-Person2=Suresh k
+Person1=Ramesh-v
+Person2=Suresh-k
 
 
 echo "$Person1: Hello $Person2 , how r u?"
