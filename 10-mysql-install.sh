@@ -3,4 +3,4 @@
 
 #Instlling mysql s/w
 
-dnf instll mysql -y
+dnf install mysql -y
