@@ -8,13 +8,12 @@
 
  if [ $USERID -ne 0]
  then 
+    echo "plz run this script with root access."
+    exit 1 # manulaly exit if error comes 
 
- echo "plz run this script with root access."
- exit 1 # manulaly exit if error comes 
+    else 
+            echo "you are super user."
+    fi
+        dnf install mysql -y
 
- else 
-        echo "you are super user."
-fi
-    dnf install mysql -y
-
-    echo " is script  proceeding ?"
+        echo " is script  proceeding ?"
