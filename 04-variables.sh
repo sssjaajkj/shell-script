@@ -2,8 +2,8 @@
 #!/bin/bash
 
 # // Declaring a variable
-Person1=Ramesh-v # no sapce bw = and value 
-Person2=Suresh-k
+Person1=$1 # Arguments/parameter
+Person2=$2
 
 # // Refrerning a variable
 echo "$Person1: Hello $Person2 , how r u?"
