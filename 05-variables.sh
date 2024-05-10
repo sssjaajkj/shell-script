@@ -7,6 +7,6 @@ read Username # here username is variable
 
 echo "Please enter Password: : "
 
-read Password 
+read -s Password 
 
 echo "Username is :$Username, Password is :$Password"
