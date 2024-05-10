@@ -1,3 +1,3 @@
 #!/bin/bash
 
-each "All variables :$@"
+echo "All variables :$@"
