@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "Ramesh : Hello suresh , how r u?
-echo "Suresh : Hello Ramesh ,i am fine, how r u?
-echo "Ramesh : Hi am fine , how  is your work?
-echo "Suresh : Hi am fine , how  is your work?
+echo "Ramesh : Hello suresh , how r u?"
+echo "Suresh : Hello Ramesh ,i am fine, how r u?"
+echo "Ramesh : Hi am fine , how  is your work?"
+echo "Suresh : Hi am fine , how  is your work?"
 
 
 #repeated word ramesh.suresh
