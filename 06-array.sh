@@ -7,5 +7,5 @@ MOVIES=("RRR","DJTILL","MURARI")
 echo "First Movie is : ${MOVIES[0]}"
 echo "second Movie is : ${MOVIES[1]}"
 
-echo "First Movie is : ${MOVIES[@]}" //All movies
+echo "First Movie is : ${MOVIES[@]}" #All movies
 
