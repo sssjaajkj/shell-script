@@ -1,6 +1,6 @@
 #!/bin/bash
 
-each "Ramesh : Hello suresh , how r u?
+echo "Ramesh : Hello suresh , how r u?
 
 each "Suresh : Hello Ramesh ,i am fine, how r u?
 
