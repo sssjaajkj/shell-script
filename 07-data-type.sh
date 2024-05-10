@@ -2,6 +2,7 @@
 
 No1=$1
 No2=$2
-sum=$(($NO1+$N02))
+
+sum=$(($No1+$No2))
 
 echo "sum total of total $NO1 and $No2 is :$sum"
