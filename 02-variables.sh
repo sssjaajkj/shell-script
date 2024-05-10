@@ -2,11 +2,11 @@
 
 echo "Ramesh : Hello suresh , how r u?
 
-each "Suresh : Hello Ramesh ,i am fine, how r u?
+echo "Suresh : Hello Ramesh ,i am fine, how r u?
 
-each "Ramesh : Hi am fine , how  is your work?
+echo "Ramesh : Hi am fine , how  is your work?
 
-each "Suresh : Hi am fine , how  is your work?
+echo "Suresh : Hi am fine , how  is your work?
 
 
 #repeated word ramesh.suresh
