@@ -10,9 +10,11 @@
  then 
 
  echo "plz run this script with root access."
-
+ exit 1 # manulaly exit if error comes 
 
  else 
-        echo "you are super user"
+        echo "you are super user."
 fi
-dnf install mysql -y
+    dnf install mysql -y
+
+    echo " is script  proceeding ?"
