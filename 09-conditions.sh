@@ -9,3 +9,5 @@ then
 else 
 echo "Given number is $Number1 is less than 10"echo "Num2 is greater then num1"
  fi
+
+ #-gt , -lt, -eq, -ge, le
