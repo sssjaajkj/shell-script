@@ -7,7 +7,7 @@
     {
         echo "exit status is $1"
 
-        echo "What we have to do ......"
+        echo "What we have to do ...... $2"
         
     }
     if [ $USERID -ne 0 ]
@@ -24,4 +24,4 @@
 
     dnf install mysql -y
 
-    VALIDATE $?, "INSTALLATION"
+    VALIDATE $? "INSTALLATION"
