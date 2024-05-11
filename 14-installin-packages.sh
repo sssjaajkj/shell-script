@@ -5,7 +5,28 @@
  
  #How do run command in shell script and take output# in inter view
  USERID=$(id -u)
+USERID=$(id -u)
+ TIMESTAMP=$(date +%F-%H-%M-%S)
+ SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
+ LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 
+VALIDATE ()
+        {
+        if [ $1 -ne 0]
+            then
+            
+                echo "$2 ... Failure..."
+                 exit  1
+          else
+          
+            echo "$2 ... Pass..."
+            
+    
+            fi   
+            
+            
+
+        }
  if [ $USERID -ne 0 ] 
  then 
     echo "plz run this script with root access."
@@ -20,4 +41,11 @@
     for i in $@
     do 
     echo "Package to insatll $i"
+    dnf list installed $i &>>$LOGFILE
+    if [ $? -eq 0 ]
+
+    then
+    echo "$i already instted ... Skiping"
+    else 
+    echo "$i not already instted ... need to install"
     done
