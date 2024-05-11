@@ -5,22 +5,31 @@
 
     VALIDATE()
     {
-        echo "exit status is $1"
 
-        echo "What we have to do ...... $2"
+        if [ $1 -ne 0]
+
+            then 
+             echo "$2 ... Installation Failed... "
+
+            exit 1
+            else 
+            echo "$2 ... Installation Pass ....
+        fi
+        } 
+        
         
     }
-    if [ $USERID -ne 0 ]
+    # if [ $USERID -ne 0 ]
     
-        then 
+    #     then 
             
-            echo  "Please access with root user ...... FAILUAR..."
-            exit 1
-    else
+    #         echo  "Please access with root user ...... FAILUAR..."
+    #         exit 1
+    # else
     
-    echo "Is a root user....SUCESS..."
+    # echo "Is a root user....SUCESS..."
     
-    fi
+    # fi
 
     dnf install mysql -y
 
