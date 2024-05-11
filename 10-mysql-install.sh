@@ -3,7 +3,7 @@
 
 #Instlling mysql s/w
  
- #How do run command in shell script and takeing output#
+ #How do run command in shell script and take output# in inter view
  USERID=$(id -u)
 
  if [ $USERID -ne 0 ] 
