@@ -16,3 +16,8 @@
     fi
 
     echo "All packages : $@"
+
+    for i in $@
+    do 
+    echo "Package to insatll $i"
+    done
