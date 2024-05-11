@@ -15,7 +15,7 @@
             echo "you are super user."
     fi
         dnf install mysql -y
-        if [$? -ne 0 ]
+        if [ $?-ne 0 ]
         then 
         echo "Installtion of mysql ... is FAILURE"
 
