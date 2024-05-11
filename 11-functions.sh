@@ -34,7 +34,7 @@
     fi
         
       
-    dnf install giwt -y
+    dnf install git -y
     VALIDATE $? "installation"
 
     # dnf install mysql -y
