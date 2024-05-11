@@ -48,4 +48,5 @@ VALIDATE ()
     echo "$i already instted ... Skiping"
     else 
     echo "$i not already instted ... need to install"
+    fi
     done
