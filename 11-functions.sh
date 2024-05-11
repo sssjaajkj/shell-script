@@ -14,7 +14,8 @@
             exit  1
           else
               echo "$2 ... Pass..."
-              fi
+            
+            fi
 
         }
 #  if [ $USERID -ne 0 ] 
