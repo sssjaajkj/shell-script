@@ -2,12 +2,9 @@
 
     USERID=$(id -u)
 
-
-    VALIDATE()
-    {
+     VALIDATE(){
 
         if [ $1 -ne 0]
-
             then 
              echo "$2 ... Installation Failed... "
 
@@ -16,14 +13,13 @@
             echo "$2 ... Installation Pass ....
         fi
         
-        
-        
     }
+
+
+   
     if [ $USERID -ne 0 ]
-    
         then 
-            
-            echo  "Please access with root user ...... FAILUAR..."
+            echo   "Please access with root user ...... FAILUAR..."
             exit 1
     else
     
@@ -31,10 +27,4 @@
     
     fi
 
-    dnf install mysql -y
-
-    VALIDATE $? "INSTALLATION  mysql"
-
-    
-    dnf install git -y
-    VALIDATE $? "INSTALLATION of git"
+   
