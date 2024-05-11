@@ -45,7 +45,7 @@
 
     dnf install git -y
     VALIDATE $? "installation"
-    dnf install mysql -y
+    dnf install mysql1 -y
     VALIDATE $? "installation"
     dnf install nginx  -y
 
