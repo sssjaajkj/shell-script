@@ -44,9 +44,10 @@
 #     fi
 
     dnf install git -y
-
-    dnf install mysqll -y
-     dnf install nginx  -y
+    VALIDATE $? "installation"
+    dnf install mysql -y
+    VALIDATE $? "installation"
+    dnf install nginx  -y
 
     VALIDATE $? "installation"
         
