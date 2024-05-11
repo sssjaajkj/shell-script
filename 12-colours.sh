@@ -46,7 +46,7 @@
     dnf install some-worong -y &>>$LOGFILE 
     VALIDATE $? "installation"
 
-    dnf install docker -y &>>$LOGFILE 
+    dnf install dockeer -y &>>$LOGFILE 
     VALIDATE $? "installation"
 
 
