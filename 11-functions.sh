@@ -15,10 +15,15 @@
                 }
             
             exit  1
-          else{echo "$2 ... Pass..."}
-              
+          else
+          {
+            echo "$2 ... Pass..."
             
             fi
+            }
+              
+            
+            
 
         }
         
