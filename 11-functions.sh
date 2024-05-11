@@ -21,7 +21,7 @@
             fi
 
         }
-        }
+        
 #  if [ $USERID -ne 0 ] 
 #  then 
 #     echo "plz run this script with root access."
