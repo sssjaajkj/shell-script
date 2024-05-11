@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "Hello .... Welcome"
 
-cho "Hello .... Welcome123"
+echo "Hello .... Welcome123"
