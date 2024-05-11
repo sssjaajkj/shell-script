@@ -2,6 +2,14 @@
 
     USERID=$(id -u)
 
+
+    VALIDATE()
+    {
+        echo "exit status is $1"
+
+        echo "What we have to do ......"
+        
+    }
     if [ $USERID -ne 0 ]
     
         then 
@@ -15,3 +23,5 @@
     fi
 
     dnf install mysql -y
+
+    VALIDATE $? "INSTALLATION"
