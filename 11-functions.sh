@@ -1,7 +1,7 @@
     #!/bin/bash
 
     USERID=$(id -u)
-
+echo "HI"
      VALIDATE(){
 
         if [ $1 -ne 0]
@@ -14,7 +14,5 @@
         fi
         
     }
-
-VALIDATE "$?" "Installation"
-
    
+   echo "HI"
