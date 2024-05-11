@@ -8,8 +8,8 @@
 
         VALIDATE ()
         {
-                if[ $1 -ne 0]
-                  then
+        if [ $1 -ne 0]
+             then
             echo "$2 ... Failure..."
             exit  1
           else
@@ -26,8 +26,8 @@
             echo "you are super user."
     fi
         dnf install mysql -y
-        if [ $?-ne 0 ]
-        then 
+        if [ $? -ne 0 ]
+       then
         echo "Installtion of mysql ... is FAILURE"
 
         exit 1
