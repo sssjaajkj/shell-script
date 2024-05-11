@@ -2,7 +2,7 @@
 echo "Hello .... Welcome"
 
 for i in {1..20}
- 
- do echo $i
- done
+ do  //starting
+ echo $i
+ done //ending 
  
