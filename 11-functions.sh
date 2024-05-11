@@ -15,15 +15,26 @@
             else 
             echo "$2 ... Installation Pass ....
         fi
-         
+        } 
         
         
     }
-   
-     dnf install mysql -y
+    if [ $USERID -ne 0 ]
+    
+        then 
+            
+            echo  "Please access with root user ...... FAILUAR..."
+            exit 1
+    else
+    
+    echo "Is a root user....SUCESS..."
+    
+    fi
+
+    dnf install mysql -y
 
     VALIDATE $? "INSTALLATION  mysql"
 
-
+    
     dnf install git -y
     VALIDATE $? "INSTALLATION of git"
