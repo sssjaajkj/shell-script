@@ -1,4 +1,8 @@
 #!/bin/bash
 echo "Hello .... Welcome"
 
-echo "Hello .... Welcome123"
+for i in {1..20}
+ 
+ do echo $i
+ done
+ 
