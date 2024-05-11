@@ -6,6 +6,10 @@
  #How do run command in shell script and take output# in inter view
  USERID=$(id -u)
 
+        VALIDATE ()
+        {
+            echo "hello "
+        }
  if [ $USERID -ne 0 ] 
  then 
     echo "plz run this script with root access."
@@ -27,12 +31,7 @@
 
     dnf install git -y
 
-    if [$? -ne 0]
-    then
-     echo " Installtion of git ... is FAILURE"
-    exit
-     else
-     echo "Installtion of git ... is SUCCESS"
+    dnf install mysql -y
 
-fi
-        echo " is script  proceeding ?"
+    VALIDATE "$?" "installation"
+        
