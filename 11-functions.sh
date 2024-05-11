@@ -33,21 +33,13 @@
             echo "you are super user."
     fi
         
-        if [ $? -ne 0 ]
-       then
-        echo "Installtion of mysql ... is FAILURE"
-
-        exit 1
-        else
-        echo  "installation mysql is success...."
-
-    fi
-
+      
     dnf install git -y
     VALIDATE $? "installation"
-    dnf install mysql1 -y
-    VALIDATE $? "installation"
-    dnf install nginx  -y
 
-    VALIDATE $? "installation"
+    # dnf install mysql -y
+    # VALIDATE $? "installation"
+
+    # dnf install nginx  -y
+    # VALIDATE $? "installation"
         
