@@ -17,24 +17,24 @@
               fi
 
         }
- if [ $USERID -ne 0 ] 
- then 
-    echo "plz run this script with root access."
-    exit 1 # manulaly exit if error comes 
+#  if [ $USERID -ne 0 ] 
+#  then 
+#     echo "plz run this script with root access."
+#     exit 1 # manulaly exit if error comes 
 
-    else 
-            echo "you are super user."
-    fi
-        dnf install mysql -y
-        if [ $? -ne 0 ]
-       then
-        echo "Installtion of mysql ... is FAILURE"
+#     else 
+#             echo "you are super user."
+#     fi
+#         dnf install mysql -y
+#         if [ $? -ne 0 ]
+#        then
+#         echo "Installtion of mysql ... is FAILURE"
 
-        exit 1
-        else
-        echo  "installation mysql is success...."
+#         exit 1
+#         else
+#         echo  "installation mysql is success...."
 
-    fi
+#     fi
 
     dnf install git -y
 
