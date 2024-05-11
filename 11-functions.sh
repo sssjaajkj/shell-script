@@ -48,5 +48,5 @@
     dnf install mysqll -y
      dnf install nginx  -y
 
-    VALIDATE "$?" "installation"
+    VALIDATE $? "installation"
         
